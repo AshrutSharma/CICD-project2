@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'jaikp0/java-rest-api'
+        IMAGE_NAME = 'ashrutsharma/cicd_project2'
     }
 
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/Jaikp/Scenario2.git'
+                git branch: 'main', url: 'https://github.com/AshrutSharma/CICD-project2.git'
             }
         }
 
